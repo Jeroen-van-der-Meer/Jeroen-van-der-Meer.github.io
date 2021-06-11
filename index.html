@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Jeroen van der Meer">
+		<meta name="description" content="This is the homepage of Jeroen van der Meer, mathematician with computer science aspirations.">
+		<!--Mobile-friendliness-->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Jeroen van der Meer</title>
+		<link rel="stylesheet" href="style.css">
+		<!--MathJax scripts:-->
+		<script type = "text/x-mathjax-config">
+			MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+		</script>
+		<script type="text/javascript"
+				src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<h1>Jeroen van der Meer</h1>
+		</header>
+		<p>
+		Welcome to my webpage! I'm a mathematician employed at the University of Copenhagen, with side interests in programming and bioinformatics.
+		</p>
+
+		<hr>
+
+		<h2>Say hello</h2>
+
+		<p>
+		You can always reach me via email — my address is <a href="mailto:meer@vivaldi.net">meer@vivaldi.net</a>. Alternatively, you can use the form below.
+		</p>
+		<div class="container">
+			<form action="mailto:meer@vivaldi.net" method="GET">
+				<div class="leftfloating">
+					<input type="text" name="name" placeholder="What's your name?">
+				</div>
+				<div class="rightfloating">
+					<input type="text" name="email" placeholder="Your email address">
+				</div>
+				<textarea type="text" name="message" placeholder="What would you like to say?" style="height:200px"></textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+
+		<h2>Interests</h2>
+		<p>
+		I am interested in the application of homotopy theory to other branches of mathematics. Historically, homotopy theory was a branch of algebraic topology in which spaces were studied 'up to continuous deformation'; in modern days, however, homotopy theory has grown out of its initial contraints, having proved itself to be spectacularly useful in many other areas of mathematics, such as arithmetic geometry, K-theory, theoretical physics, and even the very foundations of mathematics itself.
+		</p>
+
+		<p>
+		My research mainly concerned itself with the application of homotopy theory to group theory. Specifically, I proved that certain invariants arising from the modular representation theory of finite groups can be reinterpreted in higher-categorical language, after which I was able to invoke powerful homotopical machinery to explicitly compute these invariants.
+		</p>
+	</body>
+</html>
