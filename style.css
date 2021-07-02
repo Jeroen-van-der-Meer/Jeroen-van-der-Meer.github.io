@@ -4,17 +4,32 @@ body {
     line-height: 1.7;
     font-size: 18px;
     font-family: Helvetica, Arial;
-    color: #AAAAAA;
-    padding:0 10px;
+    color: #CCCCCC;
+    padding: 0 10px;
     background-color:#202020;
+}
+
+header {
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 750px) {
+	.intro {
+		text-align: left;
+	}	
+}
+
+@media only screen and (min-width: 750px) {
+	.intro {
+		width: 420px;
+		margin: 0 auto;
+	}
 }
 
 h1, h2, h3 {
 	color: #FDFDFD;
-}
-
-a {
-	color: #AAAAAA;
+	font-size: 24px;
 }
 
 a:hover {
@@ -28,58 +43,20 @@ hr {
 	background-color: #444444;
 }
 
-.container {
-	padding: 0px 20px;
+.avatar {
+	border-radius: 50%;
 }
 
-input, textarea{
-	padding: 12px;
-	box-sizing: border-box;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	font-size: 15px;
-	font-family: Helvetica, Arial;
-	background-color: #202020;
-	resize: vertical;
-	color: #FDFDFD; /*would be nice to make "Submit" grey until fields are correctly filled in */
-	vertical-align: bottom; /*baseline of <textarea> not automatically specified*/
-	border-style: solid;
-	border-color: #AAAAAA;
-	border-width: 2px;
+.icons {
+	list-style-type: none;
+	padding: 0;
+	margin-top: 0;
+	display: flex; 
+	justify-content: center;
 }
 
-input[type=text], textarea {
-	width: 100%;
+svg:hover {
+	fill: #FDFDFD;
 }
 
-::placeholder {
-	color: #AAAAAA;
-}
 
-input[type=submit]:hover {
-  background-color: #AAAAAA;
-  cursor: pointer;
-}
-
-.leftfloating {
-	float:left;
-	width:320px;
-}
-
-.rightfloating {
-	float:right;
-	width:320px;
-}
-
-/*for small screens, floating should be disabled*/
-@media only screen and (max-width: 720px) {
-	.leftfloating {
-		float:none;
-		width:100%;
-	}
-	.rightfloating {
-		float:none;
-		width:100%;
-	}
-
-}
