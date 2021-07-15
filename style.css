@@ -18,7 +18,7 @@ Font
 	font-family: 'Roboto Slab';
 	font-style: normal;
 	font-weight: 300;
-	/^src: url("webfont.woff2") format("woff2");*/
+	/*src: url("webfont.woff2") format("woff2");*/
 	src: url(https://fonts.gstatic.com/s/robotoslab/v13/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rj.woff2) format('woff2');
 	unicode-range: U+0020-007F, U+2013, U+2014, U+00E9; /*standard + em-dash + en-dash + {\'e} --- add more as needed */
 }
